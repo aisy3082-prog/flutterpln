@@ -1,0 +1,110 @@
+import '../models/vehicle.dart';
+
+const String _mobilPhoto = 'assets/img/mobil.png';
+const String _motorPhoto = 'assets/img/motor.jpeg';
+
+/// Data dummy kendaraan untuk halaman Admin.
+///
+/// Dua mobil dan dua motor masing-masing, dengan kombinasi status Tersedia,
+/// Digunakan, dan Perawatan supaya ketiga badge terlihat di daftar.
+const List<Vehicle> dummyAdminVehicles = [
+  // Motor
+  Vehicle(
+    name: 'Lifan',
+    code: 'KDM-001',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.motor,
+    status: VehicleStatus.tersedia,
+    imageAsset: _motorPhoto,
+    capacity: 2,
+    fuelType: VehicleFuelType.pertalite,
+    engineCapacity: '110 cc',
+    productionYear: 2021,
+  ),
+  Vehicle(
+    name: 'Lifan',
+    code: 'KDM-002',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.motor,
+    status: VehicleStatus.digunakan,
+    imageAsset: _motorPhoto,
+    capacity: 2,
+    fuelType: VehicleFuelType.pertalite,
+    engineCapacity: '110 cc',
+    productionYear: 2021,
+  ),
+  Vehicle(
+    name: 'Lifan',
+    code: 'KDM-003',
+    plateNumber: 'AB 124 XX',
+    type: VehicleType.motor,
+    status: VehicleStatus.tersedia,
+    imageAsset: _motorPhoto,
+    capacity: 2,
+    fuelType: VehicleFuelType.pertamax,
+    engineCapacity: '125 cc',
+    productionYear: 2022,
+  ),
+  Vehicle(
+    name: 'Lifan',
+    code: 'KDM-004',
+    plateNumber: 'AB 125 XX',
+    type: VehicleType.motor,
+    status: VehicleStatus.perawatan,
+    imageAsset: _motorPhoto,
+    capacity: 2,
+    fuelType: VehicleFuelType.pertamax,
+    engineCapacity: '125 cc',
+    productionYear: 2022,
+  ),
+
+  // Mobil
+  Vehicle(
+    name: 'Toyota Innova',
+    code: 'KDN-001',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.mobil,
+    status: VehicleStatus.tersedia,
+    imageAsset: _mobilPhoto,
+    capacity: 7,
+    fuelType: VehicleFuelType.pertamax,
+    engineCapacity: '2.4 L',
+    productionYear: 2020,
+  ),
+  Vehicle(
+    name: 'Toyota Innova',
+    code: 'KDN-002',
+    plateNumber: 'AB 126 XX',
+    type: VehicleType.mobil,
+    status: VehicleStatus.digunakan,
+    imageAsset: _mobilPhoto,
+    capacity: 7,
+    fuelType: VehicleFuelType.pertamax,
+    engineCapacity: '2.4 L',
+    productionYear: 2020,
+  ),
+  Vehicle(
+    name: 'Toyota Innova',
+    code: 'KDN-003',
+    plateNumber: 'AB 127 XX',
+    type: VehicleType.mobil,
+    status: VehicleStatus.tersedia,
+    imageAsset: _mobilPhoto,
+    capacity: 7,
+    fuelType: VehicleFuelType.solar,
+    engineCapacity: '2.0 L',
+    productionYear: 2021,
+  ),
+  Vehicle(
+    name: 'Toyota Innova',
+    code: 'KDN-004',
+    plateNumber: 'AB 128 XX',
+    type: VehicleType.mobil,
+    status: VehicleStatus.perawatan,
+    imageAsset: _mobilPhoto,
+    capacity: 7,
+    fuelType: VehicleFuelType.solar,
+    engineCapacity: '2.0 L',
+    productionYear: 2021,
+  ),
+];

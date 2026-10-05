@@ -1,0 +1,55 @@
+import '../models/vehicle.dart';
+
+const List<Vehicle> dummyVehicles = [
+  Vehicle(
+    name: 'Toyota Innova',
+    code: 'KDN-001',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.mobil,
+    status: VehicleStatus.tersedia,
+    imageAsset: 'assets/img/mobil.png',
+    capacity: 7,
+  ),
+  Vehicle(
+    name: 'Toyota Innova',
+    code: 'KDN-002',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.mobil,
+    status: VehicleStatus.digunakan,
+    imageAsset: 'assets/img/mobil.png',
+    capacity: 7,
+  ),
+  Vehicle(
+    name: 'Toyota Innova',
+    code: 'KDN-003',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.mobil,
+    status: VehicleStatus.perawatan,
+    imageAsset: 'assets/img/mobil.png',
+    capacity: 7,
+  ),
+  Vehicle(
+    name: 'Lifan',
+    code: 'KDM-001',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.motor,
+    status: VehicleStatus.tersedia,
+    imageAsset: 'assets/img/motor.jpeg',
+  ),
+  Vehicle(
+    name: 'Lifan',
+    code: 'KDM-002',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.motor,
+    status: VehicleStatus.digunakan,
+    imageAsset: 'assets/img/motor.jpeg',
+  ),
+  Vehicle(
+    name: 'Lifan',
+    code: 'KDM-003',
+    plateNumber: 'AB 123 XX',
+    type: VehicleType.motor,
+    status: VehicleStatus.perawatan,
+    imageAsset: 'assets/img/motor.jpeg',
+  ),
+];
